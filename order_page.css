@@ -1,0 +1,75 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    padding: 0;
+    margin: 0px;
+    background-color: #FCF9BE;
+}
+.container {
+    margin: 10px 20px;
+    width: 97vw;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    font-size: 60px;
+    font-family: 'poppins';
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+.non-veg {
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-left: 5vw;
+    width: 86vw;
+    height: 100%;
+    background-color: white;
+}
+.card {
+    margin-top: 35px;
+    width: 15vw;
+    height: 15vw;
+    background-color: beige;
+    margin-left: 5vw;
+    box-shadow: 5px 2px 2px grey;
+    box-shadow: inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 10px 5px 5px black;
+    box-shadow: inset;
+}
+.p {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+input {
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.btn {
+    width: 20px;
+    height: 30px;
+    font-size: 30px;
+    padding-top: 0px;
+}
