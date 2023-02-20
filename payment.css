@@ -1,0 +1,119 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    background-color: beige;
+}
+.container {
+    width: 97vw;
+    height: 97vh;
+    overflow: hidden;
+}
+.main-container {
+    width: 90vw;
+    height: 86vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 5vh;
+}
+.payment {
+    font-size: 60px;
+    font-family: poppins;
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.items {
+    padding-bottom: 0;
+}
+.items_p{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 40px;
+    margin-left: 5vw;
+}
+.line {
+    border-left: 2px solid black;
+    height: 60vh;
+    margin-left: 14vw;
+}
+.payhere {
+    margin-top: 0;
+    font-size: 40px;
+    margin-left: 15vw;
+    margin-bottom: 0px;
+}
+.qr-image {
+    width: 200px;
+    height: 200px;
+    margin-left: 13vw ;
+    margin-top: 30px;
+}
+button {
+    margin-top: 10px;
+    margin-left: 17vw;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+}
+.upi {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    .main-container {
+        width: 90vw;
+        height: 92vh;
+        background-color: white;
+        margin: auto;
+        margin-top: 3vh;
+        /* background: scroll; */
+        overflow: scroll;
+    }
+    .payment {
+        font-size: 50px;
+        font-family: poppins;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .items_p{
+        margin-top: 0;
+        font-size: 30px;
+        margin-left: 5vw;
+    }
+    .line {
+        border-top: 1px solid black;
+        border-left: 0px;
+        height: 30px;
+        margin-left: 2vw;
+    }
+    .payhere {
+        margin-top: 0;
+        font-size: 30px;
+        margin-left: 5vw;
+        margin-bottom: 0px;
+    }
+    .qr-image {
+        width: 200px;
+        height: 200px;
+        margin-left: 18vw ;
+        margin-top: 20px;
+    }
+    button {
+        margin-top: 10px;
+        margin-left: 30vw;
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+}
