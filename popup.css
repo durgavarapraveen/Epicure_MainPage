@@ -1,0 +1,42 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    width: 690px;
+    height: 400px;
+    background-color: grey;
+}
+.matter {
+    width: 650px;
+    margin: auto;
+    padding: 10px 10px;
+}
+.matter-text {
+    text-align: center;
+    font-family: 'poppins';
+    font-style: oblique;
+    /* max-height: 380px; */
+}
+.items {
+    overflow-y: scroll;
+    height: 270px;
+}
+
+button {
+    padding: 5px 8px;
+    font-size: 15px;
+    align-items: center;
+}
+.btn {
+    margin-left: 17vw;
+}
+.btn1 {
+    margin-left: 8vw;
+}
