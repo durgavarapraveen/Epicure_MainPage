@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="StyleSheet" href="order_page.css">
-        <script src="order_page.js" type="text/javascript" defer></script>
+        <!-- <script src="order_page.js" type="text/javascript" defer></script> -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <title>Order Now</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="container">
             <p class="head">IITJ Canteen</p>
             <div class="non-veg">
                 <div class="column">
@@ -191,7 +191,7 @@
 
          <!-- pop up page -->
 
-        <div class="container-popup" id="myPopup">
+        <!-- <div class="container-popup" id="myPopup">
             <div class="matter">
                 <h2 class="matter-text">The Items you Ordered!</h2>
                 <div class="items">
@@ -202,24 +202,21 @@
                 <button onclick="window.location.href='order_page.html'" class="btn">Cancel</button>
                 <button onclick="window.location.href='PaymentPage.html'" class="btn1">Confirm</button>
             </div>
-        </div>
+        </div> -->
 
             <!-- Fotter -->
         <div class="btn-ordernow">
-            <button class="popup" onclick="myFunction()">Order Now</button>
+            <button class="popup" onclick="window.location.href='popup.html' ">Order Now</button>
         </div>
 
-        <script>
-            var x=0;
+        <!-- <script>
             function myFunction() {
-                var element = document.getElementById("myPopup");
-                x=2
-                element.classList.toggle("popupbro");
-                console.log(x);
+                document.getElementById("myPopup").style.visibility = "visible";
+                // document.getElementById("container").style.opacity = "0.5";
+                document.getElementById("container").style.overflowY = "hidden";
 
             }
-            console.log(x);
-        </script>
+        </script> -->
         
     </body>
 </html>
