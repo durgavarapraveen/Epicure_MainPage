@@ -42,6 +42,7 @@ for (var i=0;i<decrement.length;i++){
 
     })
 }
+var a=3;
 function orderit(){
     var prices=document.getElementsByClassName('rate');
     // console.log(prices);
@@ -58,25 +59,25 @@ function orderit(){
     for (var i=0;i<rates.length;i++){
         sum+=rates[i]*counts[i];
     }
-    var a=3;
-    document.getElementById('container3').style.visibility = "visible";
-
+    document.getElementById('container3').style.visibility = "visible"; 
     for(var i=0;i<20;i++) {
-        var num = i+20;
+        var mul = a*30;
         if(counts[i]>0) {
-            var mul = a*50;
+            var mul = a*30;
             console.log(mul);
-            console.log(num.toString());
-            document.getElementById(i+20).style.visibility = "visible";
-            document.getElementById(i+20).style.top = "mul";
-            console.log(document.getElementById(i+20));
+            document.getElementById(i+20).style.visibility = "visible" ;
+            document.getElementById(i+40).innerHTML = counts[i];
+            var el = document.getElementById(i+20); 
+            el.style.visibility = 'visible';
+            el.style.position = 'absolute';
+            el.style.top = mul + 'px';
             a++;
-            console.log(a);
         }
     }
-    console.log(rates);
-    console.log(counts);
-    console.log(sum);
-    console.log(a);
-    // window.location.href="popup.html";
+    var elem = document.getElementById(100);
+    console.log(document.getElementById(100));
+    el.style.visibility = 'visible';
+    el.style.position = 'absolute';
+    el.style.top = mul + 'px';
+    document.getElementById('amount-total').innerHTML = sum;
 }

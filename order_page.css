@@ -157,6 +157,8 @@ body {
     left: 24vw;
     position: absolute;
     visibility: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .matter {
     width: 650px;
@@ -167,11 +169,13 @@ body {
     text-align: center;
     font-family: 'poppins';
     font-style: oblique;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
 }
 .items {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 270px;
+    height: 100%;
+
 }
 
 button {
@@ -201,6 +205,10 @@ button {
     height: 30px;
     font-size: 25px;
     margin-left: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    visibility: hidden;
 }
 .items button {
     width: 40px;
@@ -212,108 +220,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-.i1 {
-    position: absolute;
-    visibility: hidden;
-    top: 55px;
-}
-.i2 {
-    position: absolute;
-    visibility: hidden;
-    top: 85px;
-}
-.i3 {
-    position: absolute;
-    visibility: hidden;
-    top: 115px;
-}
-.i4 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i5 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i6 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i7 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i8 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i9 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i10 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i11 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i12 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i13 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i14 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i15 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i16 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i17 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i18 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i19 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-.i20 {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-}
-
-
 @media screen and (max-width:500px) {
     .container {
         overflow-x: hidden;
