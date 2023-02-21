@@ -368,12 +368,12 @@ button {
     }
     .numb .plus{
         margin-left:2px;
-        font-size:30px;
+        font-size:20px;
         cursor: pointer;
     }
     .numb .minus{
         margin-right:2px;
-        font-size:30px;
+        font-size:20px;
         cursor: pointer;
     }
     input {
