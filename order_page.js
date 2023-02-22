@@ -42,8 +42,14 @@ for (var i=0;i<decrement.length;i++){
 
     })
 }
-var a=3;
+
+
+
+var a=2;
+var sum=0;
 function orderit(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     var prices=document.getElementsByClassName('rate');
     // console.log(prices);
     const rates=[];
@@ -55,10 +61,10 @@ function orderit(){
     for (var i=0;i<count.length;i++){
         counts.push(parseInt(count[i].value))
     }
-    var sum=0;
     for (var i=0;i<rates.length;i++){
         sum+=rates[i]*counts[i];
     }
+    
     document.getElementById('container3').style.visibility = "visible"; 
     for(var i=0;i<20;i++) {
         var mul = a*30;
@@ -74,10 +80,17 @@ function orderit(){
             a++;
         }
     }
-    var elem = document.getElementById(100);
+    mul++;
+    console.log(rates);
+    console.log(counts);
+    console.log(sum);
+    var el = document.getElementById(100);
     console.log(document.getElementById(100));
     el.style.visibility = 'visible';
     el.style.position = 'absolute';
     el.style.top = mul + 'px';
-    document.getElementById('amount-total').innerHTML = sum;
+    document.getElementById(101).innerHTML = sum;
+    var xox = document.getElementsByClassName('container');
+    xox.style.visibility = "hidden";
+    // xox.style.pointer-events = 'none';
 }

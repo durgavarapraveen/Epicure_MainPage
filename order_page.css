@@ -6,6 +6,9 @@ body {
     margin: 0px;
     background-color: white;
     overflow-x: hidden;
+    background-image: url('https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?w=900');
+    background-attachment: fixed;
+    background-repeat: round;
 }
 .container {
     margin: 10px 20px;
@@ -13,6 +16,7 @@ body {
     height: 100%;
     overflow-y: hidden;
     overflow-x: scroll;
+    visibility: visible;
 }
 .head {
     font-size: 60px;
@@ -23,6 +27,7 @@ body {
     font-style: italic;
     padding: 0;
     margin: 0;
+    color: #fff;
 }
 .row {
     display: flex;
@@ -116,7 +121,7 @@ body {
  input {
     width: 2.8vw;
     height: 3.3vh;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     text-decoration: none;
 } 
@@ -126,7 +131,7 @@ body {
     height: 30px;
     font-size: 20px;
 }
-.order-btn {
+.btn-fotter {
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -152,32 +157,43 @@ body {
 .container3 {
     width: 690px;
     height: 400px;
-    background-color: grey;
-    top: 190%;
+    background-color: #FFF1DC;
+    top: 20%;
     left: 24vw;
     position: absolute;
     visibility: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 .matter {
-    width: 650px;
-    margin: auto;
+    width: 100%;
     padding: 10px 10px;
 }
 .matter-text {
     text-align: center;
     font-family: 'poppins';
     font-style: oblique;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 15px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    background-color: #645B8A;
+    color: #ffffff;
 }
 .items {
-    height: 100%;
-
+    border-radius: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 270px;
 }
-
+.fotter {
+    background-color: #645B8A;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
 button {
     padding: 5px 8px;
     font-size: 15px;
@@ -193,8 +209,9 @@ button {
     color: #fff;
 }
 .btn1 {
-    margin-left: 8vw;
+    margin-right: 17vw;
     font-weight: 500;
+    float: right;
 }
 .btn1:hover {
     background-color: grey;
@@ -205,9 +222,8 @@ button {
     height: 30px;
     font-size: 25px;
     margin-left: 5vw;
-    margin-top: 0;
-    margin-bottom: 0;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
     visibility: hidden;
 }
 .items button {
@@ -219,6 +235,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    background-color: #FFF1DC;
 }
 @media screen and (max-width:500px) {
     .container {
@@ -298,7 +316,7 @@ button {
         width: 90vw;
         height: 600px;
         background-color: grey;
-        top: 1070%;
+        top: 10%;
         left: 7vw;
         position: absolute;
         overflow-x: hidden;
@@ -308,7 +326,7 @@ button {
         font-family: 'poppins';
         font-style: oblique;
         text-align: left;
-        margin-left: 5vw;
+        padding-left: 5px;
     }
     .items {
         overflow-x: hidden;
@@ -321,7 +339,7 @@ button {
         font-size: 20px;
     }
     .btn1 {
-        margin-left: 12vw;
+        margin-right: 12vw;
         font-weight: 500;
         font-size: 20px;
     }

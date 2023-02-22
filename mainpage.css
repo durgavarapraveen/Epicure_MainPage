@@ -14,11 +14,6 @@ img{
     padding-left: 2vw;
     padding-top:1.2vh;
 }
-header {
-    /* position: fixed;
-    top: 0;
-    z-index: 10; */
-} 
 .container{
      overflow:hidden;
      margin-top:0.5vh;
@@ -38,11 +33,15 @@ header {
 }
 .imh{
     padding: 0%;
-    /* margin:0; */
     height:90vh;
     width:100%;
-    background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
+ .imh1{
+    padding: 0%;
+     margin:0; 
+    height:90vh;
+    width:100%;
+ }
 .quote{
    position:absolute;
    font-family: 'poppins';
@@ -301,6 +300,55 @@ header {
     margin-top: 10px;
     margin-right: 15px;
   }
+  .a_menu {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 15px;
+    background-color: #333;
+    border: none;
+  }
+  .items{
+    background-color:  #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color:white;
+    position:absolute;
+    height:203px;
+    display:block;
+    top : 68.0px;
+    z-index:1;
+    visibility: hidden;
+    right:0;
+    margin-top: 0;
+}
+.items a{
+    background-color:#f1f1f1;
+    color:#000;
+    text-decoration: none;
+    display: block;
+    padding:8px 16px;
+    text-align:center;
+} 
+#more{
+    background-color:#E67E22 ;
+    color:white;
+}
+.hower:hover #menu{
+    opacity :0.6;
+}
+.hower:hover .items{
+    transition : visibility 2.5s;
+    visibility: visible;
+} 
+.items a:hover{
+    background-color: #555;
+    color:white;
+}
   .active {
     color: #fff;
     display: block;
@@ -315,10 +363,13 @@ header {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #fff;
     color: black;
   }
-
+.btn-menu:hover {
+    background-color: #fff;
+    color: black;
+}
 .logo-topnav {
     width: 90px;
     height: 70px;
@@ -539,5 +590,8 @@ header {
         padding-bottom:0;
         float:right;
         text-align:center;  
+    }
+    .a_menu {
+        display: none;
     }
 }
